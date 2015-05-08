@@ -8,7 +8,7 @@ $token = '';
 //Dados de Conexão
 $options = array('location' 	        => 'http://webservice.softlion.com.br/server', 
                  'uri' 			=> 'http://webservice.softlion.com.br/soap/server/', 
-		 'encoding'		=>'ISO-8859-1', 
+		 'encoding'		=> 'ISO-8859-1', 
 		 'trace' 		=> true,
 		 'exceptions' 		=> true,
 		 'compression' 		=> SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
@@ -28,15 +28,15 @@ $dados->cepDestino = '00000-000'; //CEP de destino
 $dados->valorNota  = '50.00'; // Valor total da nota referente aos pacotes a serem enviados
 
 //Pacotes para calculo de frete 
-$dados->pacote{1}->peso 		    = 2500; //em gramas
-$dados->pacote{1}->largura  	  = 40;	  //em centimentros
-$dados->pacote{1}->altura   	  = 40;	  //em centimentros
-$dados->pacote{1}->comprimento 	= 35;	  //em centimentros
-$dados->pacote{1}->quantidade 	= 1; 	  //em unidades
+$dados->pacote{1}->peso        = 2500; //em gramas
+$dados->pacote{1}->largura     = 40;	  //em centimentros
+$dados->pacote{1}->altura      = 40;	  //em centimentros
+$dados->pacote{1}->comprimento = 35;	  //em centimentros
+$dados->pacote{1}->quantidade  = 1; 	  //em unidades
 
-$dados->pacote{2}->peso 		    = 6500; //em gramas
-$dados->pacote{2}->largura  	  = 20;	  //em centimentros
-$dados->pacote{2}->altura   	  =20;	  //em centimentros
+$dados->pacote{2}->peso         = 6500; //em gramas
+$dados->pacote{2}->largura      = 20;	  //em centimentros
+$dados->pacote{2}->altura       = 20;	  //em centimentros
 $dados->pacote{2}->comprimento 	= 25; 	//em centimentros
 $dados->pacote{2}->quantidade 	= 4;  	//em unidades
 
