@@ -7,12 +7,12 @@ $token = '';
 
 //Dados de Conexão
 $options = array('location' 	        => 'http://webservice.softlion.com.br/server', 
-                 'uri' 					      => 'http://webservice.softlion.com.br/soap/server/', 
-				         'encoding'			      =>'ISO-8859-1', 
-				         'trace' 				      => true,
-			           'exceptions' 			  => true,
-			           'compression' 			  => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
-			           'connection_timeout'	=> 1000); 
+                 'uri' 		=> 'http://webservice.softlion.com.br/soap/server/', 
+		 'encoding'		=>'ISO-8859-1', 
+		 'trace' 		=> true,
+		 'exceptions' 		=> true,
+		 'compression' 		=> SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
+		 'connection_timeout'	=> 1000); 
 
 //Inicia conexão SOAP com o WebService				 
 $client = new SoapClient(NULL, $options); 
