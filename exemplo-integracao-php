@@ -7,7 +7,7 @@ $token = '';
 
 //Dados de Conexão
 $options = array('location' 	        => 'http://webservice.softlion.com.br/server', 
-                 'uri' 		=> 'http://webservice.softlion.com.br/soap/server/', 
+                 'uri' 			=> 'http://webservice.softlion.com.br/soap/server/', 
 		 'encoding'		=>'ISO-8859-1', 
 		 'trace' 		=> true,
 		 'exceptions' 		=> true,
